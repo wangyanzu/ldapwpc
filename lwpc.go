@@ -15,8 +15,8 @@ func main() {
 	ladpServerPtr := flag.String("s", "ldap://127.0.0.1:389", "ldap server address")
 	userFilterPtr := flag.String("f", "(objectClass=organizationalPerson)", "user filter")
 	baseDnPtr := flag.String("b", "dc=example,dc=com", "base dn")
-	usernamePtr := flag.String("u", "admin", "bind user")
-	passwordPtr := flag.String("p", "666", "bind user password")
+	usernamePtr := flag.String("bu", "cn=root,dc=example,dc=com", "bind user")
+	passwordPtr := flag.String("bp", "666", "bind user password")
 	flag.Parse()
 
 	// read weak password file
